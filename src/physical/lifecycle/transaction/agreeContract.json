@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "extends" : {"$ref": "../../lifecycle/transaction/__Event.json"}
+}

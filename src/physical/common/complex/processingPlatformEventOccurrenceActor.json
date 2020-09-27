@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "systemIdentifier": {
+            "$ref": "../../common/stringEnum/systemScheme.json"
+        },
+        "applicationSubComponent": {
+            "$ref": "../../_leaf/free/string.json"
+        }
+    },
+    "required": [
+        "systemIdentifier"
+    ],
+    "additionalProperties": false,
+    "extends" : {"$ref": "../../common/complex/__EventOccurrenceActor.json"}
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "subjectIdentifier": {
+            "$ref": "../../common/identifier/transactionIdentifier.json"
+        },
+        "lifecycle": {
+            "$ref": "../../common/complex/lifecycleDetail.json"
+        },
+        "eventOccurrence": {
+            "$ref": "../../lifecycle/transaction/eventOccurrence.json"
+        },
+        "subjectPostEventOccurrence": {
+            "$ref": "../../lifecycle/transaction/productTransaction.json"
+        },
+        "appendix": {
+            "$ref": "../../_leaf/free/object.json"
+        }
+    },
+    "required": [
+        "subjectIdentifier",
+        "eventOccurrence"
+    ],
+    "additionalProperties": false,
+    "extends" : {"$ref": "../../root/__notification/__Notification.json"}
+}

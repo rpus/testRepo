@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "subjectIdentifier": {
+            "$ref": "../../common/identifier/transactionIdentifier.json"
+        },
+        "occurrenceIdentifier": {
+            "$ref": "../../common/identifier/eventOccurrenceIdentifier.json"
+        },
+        "alternateOccurrenceIdentifier": {
+            "$ref": "../../common/collection/eventOccurrenceIdentifierList.json"
+        },
+        "occurrenceDateTime": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "actor": {
+            "$ref": "../../common/complex/__EventOccurrenceActor.json"
+        },
+        "event": {
+            "$ref": "../../lifecycle/transaction/__Event.json"
+        }
+    },
+    "required": [
+        "subjectIdentifier",
+        "occurrenceDateTime",
+        "event"
+    ],
+    "additionalProperties": false
+}

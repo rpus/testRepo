@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "hasInitiated": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "hasTerminated": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "isCurrentVersionToBeHeldOver": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "expectedTerminationDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        }
+    },
+    "required": [
+        "hasTerminated"
+    ],
+    "additionalProperties": false
+}
