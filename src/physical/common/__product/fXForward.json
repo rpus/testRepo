@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "transactionCounterparty1PrinciplPayReceiveRole": {
+            "$ref": "../../common/binary/payReceive.json"
+        },
+        "principal1": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        },
+        "principal1IsCalculated": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "principal2": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        },
+        "quotedRate": {
+            "$ref": "../../common/complex/fXRate.json"
+        },
+        "quotedRateBreakdown": {
+            "$ref": "../../common/complex/fXRateBreakdown.json"
+        },
+        "benchmarkRateIdentifier": {
+            "$ref": "../../common/collection/benchmarkRateClassifiedIdentifierList.json"
+        },
+        "fixingDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "settlementCurrency": {
+            "$ref": "../../common/stringEnum/currencyScheme.json"
+        },
+        "settlementDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "schedules": {
+            "$ref": "../../common/_leg_Schedules/fXLegSchedules.json"
+        }
+    },
+    "required": [
+        "transactionCounterparty1PrinciplPayReceiveRole",
+        "principal1",
+        "principal2",
+        "settlementDate"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/__product/__Product.json"
+    }
+}

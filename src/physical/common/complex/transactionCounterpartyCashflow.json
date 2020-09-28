@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "cashflowIdentifier": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "alternateIdentifier": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "transactionCounterparty1PayOrReceiveRole": {
+            "$ref": "../../common/binary/payReceive.json"
+        },
+        "effectiveDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "effectiveTime": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "eventDateTime": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "isAmountEstimated": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "isSystemGenerated": {
+            "$ref": "../../_leaf/free/boolean.json"
+        },
+        "cashflowType": {
+            "$ref": "../../common/stringEnum/paymentTypeScheme.json"
+        },
+        "amount": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        }
+    },
+    "required": [
+        "transactionCounterparty1PayOrReceiveRole",
+        "effectivDate",
+        "cashflowType",
+        "amount"
+    ],
+    "additionalProperties": false
+}

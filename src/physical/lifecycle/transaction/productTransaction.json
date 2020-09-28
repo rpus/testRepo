@@ -1,4 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "string"
+    "type": "object",
+    "properties": {
+        "transactionHeader": {
+            "$ref": "../../common/complex/transactionHeader.json"
+        },
+        "product": {
+            "$ref": "../../common/__product/__Product.json"
+        },
+        "priceable": {
+            "$ref": "../../_leaf/free/string.json"
+        }
+    },
+    "required": [
+        "transactionHeader",
+        "product"
+    ],
+    "additionalProperties": false
 }

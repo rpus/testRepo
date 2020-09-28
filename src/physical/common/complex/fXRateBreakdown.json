@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "nearRate": {
+            "$ref": "../../_leaf/free/number.json"
+        },
+        "nearDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "forwardPoints": {
+            "$ref": "../../_leaf/free/number.json"
+        }
+    },
+    "required": [
+        "nearRate",
+        "forwardPoints"
+    ],
+    "additionalProperties": false
+}

@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "sourceSystemTransactionVersion": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "accreditedBrokerage": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "accreditedFee": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "affirmation": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "alternateTransactionIdentifier": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "assignedSalesCredit": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "bookAssignment": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "clearing": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "confirmation": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "contractAgreement": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "earlyTerminationClause": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "productClassification": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "processingPlatformRole": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "regulatoryRegimeImpact": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "settlement": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "stampedMarginElection": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "transactionLinkage": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "transactionControl": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "transactionElection": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "transactionCompression": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "traderComment": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "additionalComment": {
+            "$ref": "../../_leaf/free/string.json"
+        },
+        "valuationDirective": {
+            "$ref": "../../_leaf/free/string.json"
+        }
+    },
+    "required": [
+        "hasTerminated"
+    ],
+    "additionalProperties": false
+}

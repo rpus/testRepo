@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "XX1": {
+            "$ref": "../../common/stringEnum/currencyScheme.json"
+        },
+        "XX2": {
+            "$ref": "../../common/stringEnum/currencyScheme.json"
+        },
+        "quoteOrder": {
+            "$ref": "../../common/binary/currencyPairQuoteOrder.json"
+        }
+    },
+    "required": [
+        "rate",
+        "currencyPair"
+    ],
+    "additionalProperties": false
+}

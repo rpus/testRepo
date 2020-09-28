@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "rate": {
+            "$ref": "../../_leaf/free/number.json"
+        },
+        "currencyPair": {
+            "$ref": "../../common/complex/currencyPair.json"
+        },
+        "isHistoricRollRate": {
+            "$ref": "../../_leaf/free/boolean.json"
+        }
+    },
+    "required": [
+        "rate",
+        "currencyPair"
+    ],
+    "additionalProperties": false
+}
