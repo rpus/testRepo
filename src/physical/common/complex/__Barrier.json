@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "anyOf": [
+        {"$ref": "../../common/complex/americanBarrier.json"},
+        {"$ref": "../../common/complex/discreteBarrier.json"},
+        {"$ref": "../../common/complex/europeanBarrier.json"},
+        {"$ref": "../../common/complex/windowBarrier.json"}
+    ]
+}

@@ -2,6 +2,10 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "anyOf": [
-        {"$ref": "../../common/__product/fXForward.json"}
+        {"$ref": "../../common/__product/fXDoubleAmericanBarrierEuropeanDigitalOption.json"},
+        {"$ref": "../../common/__product/fXForward.json"},
+        {"$ref": "../../common/__product/fXEuropeanDigitalOption.json"},
+        {"$ref": "../../common/__product/fXEuropeanVanillaCurrencyOption.json"},
+        {"$ref": "../../common/__product/fXSingleEuropeanBarrierEuropeanCurrencyOption.json"}
     ]
 }

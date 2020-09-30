@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "transactionCounterparty1BuySellRole": {
+            "$ref": "../../common/binary/buySell.json"
+        },
+        "principal": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        },
+        "expiryDateTime": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "barrier": {
+            "$ref": "../../common/complex/europeanBarrier.json"
+        },
+        "benchmarkRateIdentifier": {
+            "$ref": "../../common/collection/benchmarkRateClassifiedIdentifierList.json"
+        },
+        "settlementDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        }
+    },
+    "required": [
+        "transactionCounterparty1BuySellRole",
+        "principal",
+        "expiryDateTime",
+        "barrier",
+        "settlementDate"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/__product/__Product.json"
+    }
+}

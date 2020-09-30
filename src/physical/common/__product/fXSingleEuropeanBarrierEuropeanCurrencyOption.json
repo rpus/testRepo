@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "underlyingOption": {
+            "$ref": "../../common/__product/fxEuropeanVanillaCurrencyOption.json"
+        },
+        "barrier": {
+            "$ref": "../../common/complex/europeanBarrier.json"
+        },
+        "barrierKnockCondition": {
+            "$ref": "../../common/binary/inOut.json"
+        }
+    },
+    "required": [
+        "underlyingOption",
+        "barrier",
+        "barrierKnockCondition"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/__product/__Product.json"
+    }
+}

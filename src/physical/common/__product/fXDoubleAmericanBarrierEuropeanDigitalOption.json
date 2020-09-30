@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "underlyingOption": {
+            "$ref": "../../common/__product/fxEuropeanDigitalOption.json"
+        },
+        "lowerBarrier": {
+            "$ref": "../../common/complex/americanBarrier.json"
+        },
+        "upperBarrier": {
+            "$ref": "../../common/complex/americanBarrier.json"
+        },
+        "barrierKnockCondition": {
+            "$ref": "../../common/binary/inOut.json"
+        }
+    },
+    "required": [
+        "underlyingOption",
+        "lowerBarrier",
+        "upperBarrier",
+        "barrierKnockCondition"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/__product/__Product.json"
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "transactionCounterparty1BuySellRole": {
+            "$ref": "../../common/binary/buySell.json"
+        },
+        "transactionCounterparty1Principal1CallPutRole": {
+            "$ref": "../../common/binary/callPut.json"
+        },
+        "principal1": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        },
+        "principal2": {
+            "$ref": "../../common/complex/unsignedMoney.json"
+        },
+        "expiryDateTime": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "strikeRate": {
+            "$ref": "../../common/complex/fXRate.json"
+        },
+        "benchmarkRateIdentifier": {
+            "$ref": "../../common/collection/benchmarkRateClassifiedIdentifierList.json"
+        },
+        "fixingDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        },
+        "settlementCurrency": {
+            "$ref": "../../common/stringEnum/currencyScheme.json"
+        },
+        "settlementDate": {
+            "$ref": "../../common/simple/dateTime.json"
+        }
+    },
+    "required": [
+        "transactionCounterparty1BuySellRole",
+        "transactionCounterparty1PrinciplCallPutRole",
+        "principal1",
+        "principal2",
+        "expiryDateTime",
+        "strikeRate",
+        "settlementDate"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/__product/__Product.json"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "level": {
+            "$ref": "../../common/complex/fXRate.json"
+        },
+        "triggerCondition": {
+            "$ref": "../../common/binary/triggerCondition.json"
+        },
+        "dateTime": {
+            "$ref": "../../common/simple/dateTime.json"
+        }
+    },
+    "required": [
+        "level",
+        "triggerCondition",
+        "dateTime"
+    ],
+    "additionalProperties": false,
+    "extends": {
+        "$ref": "../../common/complex/__Barrier.json"
+    }
+}
