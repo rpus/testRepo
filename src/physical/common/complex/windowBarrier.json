@@ -9,7 +9,7 @@
             "$ref": "../../common/binary/triggerCondition.json"
         },
         "window": {
-            "$ref": "../../common/simple/dateTimeSpan.json"
+            "$ref": "../../common/complex/dateTimeSpan.json"
         }
     },
     "required": [

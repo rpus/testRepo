@@ -3,7 +3,7 @@
     "type": "object",
     "properties": {
         "time": {
-            "$ref": "../../_leaf_free/string.json"
+            "$ref": "../../_leaf/free/string.json"
         },
         "businessCentre": {
             "$ref": "../../common/stringEnum/businessCentreScheme.json"
